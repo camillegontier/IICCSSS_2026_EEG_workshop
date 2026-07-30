@@ -1,5 +1,7 @@
 # EEG data management, preprocessing, and analysis for studying sustained attention.
 
+![example](example.jpeg)
+
 The goal of this workshop is three-fold. First, we will review the basics of EEG signal preprocessing. As opposed to e.g. intracortical recordings, EEG is a non-invasive method which allows researchers to simply record brain activity by using electrodes at the surface of the scalp with a very good temporal resolution. This ease of use comes at the cost of a lower signal-to-noise ratio: the raw EEG signal is often noisy, and muscular artifacts (e.g. from blinking) can be several orders of magnitude larger than the signal of interest. Using the MNE Python package, we will thus review the main techniques (filtering and ICA) for preprocessing raw data and extracting relevant features. 
 
 Second, due to their high sampling frequency and to the length of experiments, EEG datasets are often very large, thereby complicating data sharing and open science initiatives. We will use DataLad (an open source data management system based on Git which can be used for version control and sharing of large datasets) to recover a publicly available dataset of EEG recordings. 
