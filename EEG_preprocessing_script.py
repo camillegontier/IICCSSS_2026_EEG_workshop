@@ -21,16 +21,12 @@ from pathlib import Path
 
 dir_path = Path(os.getcwd(),"Data","sub-001_task-CBOFF_run-1_eeg.set")
 raw = mne.io.read_raw_eeglab(dir_path, preload=True)
-# raw.plot(
-#     duration=10,
-#     n_channels=20,
-#     decim=4,
-#     events=events,
-#     event_id=event_dict,
-#     event_color=None,
-#     theme='dark'
-    
-# )
+raw.plot(
+    duration=10,
+    n_channels=20,
+    decim=4,
+    theme='dark'
+     )
 
 # Channel types ################################################################
 
@@ -57,7 +53,7 @@ montage.plot(sphere="eeglab")
 print(raw.info)
 
 # Compute epochs ##############################################################
-events = mne.events_from_annotations(raw)[0]
+events = mne.events_from_annotations(raw)
 idx_trial_start = np.where(events[:,2]==2)[0]
 
 # read behavior data
