@@ -21,7 +21,6 @@ The workshop materials will be written in Python and run in a Jupyter notebook. 
 
 In order to save time, students are also encouraged to do the following:
 - Ensure Python is installed and usable. A practical solution is to install Anaconda, a full setup for data science: https://www.anaconda.com/download#download-section
-- Install Git: https://git-scm.com/install/windows
 - Install DataLad: https://handbook.datalad.org/en/latest/intro/installation.html#install
 - A quickstart guide for accessing OpenNeuro datasets is available at https://handbook.datalad.org/en/latest/usecases/openneuro.html and a more complete guide on installing datasets at https://handbook.datalad.org/en/latest/basics/101-105-install.html. The dataset we will use in the hackathon is https://openneuro.org/datasets/ds006040/versions/1.0.1
 - Install the MNE (https://mne.tools/stable/install/index.html) and PyPREP (https://pypi.org/project/pyprep/) libraries. 
